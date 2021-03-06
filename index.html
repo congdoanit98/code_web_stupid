@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doan Cong Nguyen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="information">
+            <div class="topic" style="font-size: 4rem; width: 10rem ;"><a href="index.html">Đoàn</a></div>
+            <div class="topic"><a href="#">Tự sự<i class="fas fa-chevron-down"></i></a></div>
+            <div class="topic"><a href="#">Những chuyến đi<i class="fas fa-chevron-down"></i></a></div>
+            <div class="topic"><a href="#">Phim ảnh<i class="fas fa-chevron-down"></a></i></div>
+            <div class="topic"><a href="#">Dự án<i class="fas fa-chevron-down"></i></a></div>
+        </div>
+        <div class="contact">
+            <div><a href="https://www.facebook.com/congdoanit98" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+            <div><a href="https://www.youtube.com/doanconguyen" target="_blank"><i class="fab fa-youtube"></i></a></div>
+            <div><a href="https://www.instagram.com/ncdoan_/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+            <div>
+                <div class="menu">
+                    <label for="check-menu"> MENU</label>
+                    <input type="checkbox" id="check-menu" name="check-menu" onclick="showMenu()">
+                </div>
+                
+            </div>
+            
+        </div>
+        <div id="list-topic">
+            <div class="list-topic-item"><a href="#">Tự sự</a></div>
+            <div class="list-topic-item"><a href="#">Những chuyến đi</a></div>
+            <div class="list-topic-item"><a href="#">Phim ảnh</a></div>
+            <div class="list-topic-item"><a href="#">Dự án</a></div>
+            <div class="list-topic-item">
+                <label for="exit-menu" class="label-exit-menu"><i class="fas fa-times"></i>Exit Menu</label>
+                <input type="checkbox" id="exit-menu" name="exit-menu" onclick="exitMenu()">
+            </div>
+        </div>    
+    </header>
+    <section class="content">
+        <div class="quick-information">
+            <div class="myname">
+                <div class="name">Đoàn  Công Nguyễn</div>
+                <div class="career">Công nhân. Thợ cài win dạo. Thợ chụp dạo.</div>
+            </div>
+            <div class="maxim">
+                Tại nơi mình đang đứng, sử dụng nhũng gì đang có và làm những điều có thể.
+            </div>
+        </div>
+        <div class="some-info">
+            <div class="vietnamese-info">viet</div>
+            <div class="english-info">english</div>
+        </div>
+        <div class="photo">
+            hinfh
+        </div>
+        <div class="video">
+            video
+        </div>
+        <div class="project">
+            du an
+        </div>
+    </section>
+    <footer>
+        <p>huhu</p>
+    </footer>
+
+
+    <script>
+        function showMenu() {
+          var checkBox = document.getElementById("check-menu");
+          var text = document.getElementById("list-topic");
+          var checkEixt = document.getElementById("exit-menu")
+          if (checkBox.checked == true){
+            text.style.display = "block";
+            check.checked = false
+          } else {
+             text.style.display = "none";
+          }
+        }
+
+        function exitMenu() {
+          var checkBox = document.getElementById("exit-menu");
+          var text = document.getElementById("list-topic");
+          var checkMenu = document.getElementById("check-menu")
+          if (checkBox.checked == true){
+            text.style.display = "none";
+            checkMenu.checked = false;
+            checkBox.checked = false;
+          } else {
+             text.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>

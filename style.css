@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: olive 1px solid;
+    width: 100%;
+}
+/*--------------HEADER--------------*/
+
+.fas{
+    display: block;
+    width: 30px;
+    margin-left: 0.4rem;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.fa-chevron-down{
+    position: absolute;
+    display: inline;
+    align-content: center;
+}
+
+body {
+    padding: 0.5% 1% 0.5% 1%;
+    font-family: 'DM Mono', monospace;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+
+}
+
+.information {
+    flex: 85%;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.information div{
+    width: auto;
+    padding: 0 0.5% 0 0.5%;
+    transition: all .2s ease-in-out;
+}
+
+.information .topic:hover{
+    transform: scale(1.15);
+    color: #8A2908;
+}
+
+.information a:hover{
+    color: #8A2908;
+}
+
+.topic{
+    position: relative;
+    display: inline;
+    margin-right: 2rem;
+}
+
+.information a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact {
+    flex: 15%;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    
+}
+.contact div a{
+    transition: all .2s ease-in-out;
+    list-style-type: none;
+    display: inline;
+}
+
+.contact div {
+    transition: all .2s ease-in-out;
+    padding: 0 0% 0 0%;
+}
+
+.contact div:hover {
+    transform: scale(1.15);
+}
+
+.contact a{
+    text-decoration: none;
+}
+.contact i{
+    display: inline;
+}
+
+.fab {
+    color: black;
+}
+.fa-facebook-f:hover {
+    color: blue;
+}
+.fa-youtube:hover {
+    color: red;
+}
+
+.fa-instagram:hover {
+    color: rgb(253, 114, 0);
+}
+
+.fa-times{
+    text-align: center;
+}
+.menu:hover{
+    color: #8A2908;
+}
+
+#list-topic{
+    position: absolute;
+    display: none;
+    right: 20px;
+    width: 12rem;
+    text-align: left;
+    font-size: 1rem;
+    top: 5rem;
+    
+}
+
+.list-topic-item{
+    display: block;
+    color: #000;
+    text-align: right;
+    width: 100%;
+    background-color: #8A2908;
+    color: #FFF;
+}
+.list-topic-item:hover{
+    display: block;
+    color: #000;
+    text-align: right;
+    width: 100%;
+    background-color: #FFF;
+    color: #8A2908;
+}
+
+.list-topic-item a{
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    text-align: right;
+    color: #FFF;
+    text-decoration: none;
+}
+.list-topic-item a:hover{
+    opacity: 1;
+    color: #8A2908;
+    background-color: #FFF;
+}
+
+#check-menu{
+    display: none;
+}
+
+#exit-menu{
+    display: none;
+}
+
+.label-exit-menu{
+    display: block;
+    width: 100%;
+}
+
+/*--------------CONTENT--------------*/
+.quick-information{
+    display: flex;
+}
+
+.myname{
+    flex-direction: row;
+    padding: 5rem;
+}
+.name{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.career{
+    
+}
+
+.maxim{
+    text-align: center;
+    margin: auto;
+}
+
+.some-info{
+    display: flex;
+}
+
+
+/*--------------FOOTER--------------*/
