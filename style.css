@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: olive 1px solid;*/
+    border: olive 1px solid;
     width: 100%;
 }
 /*--------------HEADER--------------*/
@@ -24,13 +24,13 @@
 }
 
 body {
-    padding: 0.5% 1% 0.5% 1%;
     font-family: 'DM Mono', monospace;
 }
 header {
     display: flex;
     flex-direction: row;
     font-size: 1.5rem;
+    background-color: rgb(207, 207, 207);
 
 }
 
@@ -60,6 +60,12 @@ header {
     position: relative;
     display: inline;
     margin-right: 2rem;
+}
+
+.topic-start{
+    font-size: 4rem;
+    width: 10rem;
+    margin-left: 0.5rem;
 }
 
 .information a {
@@ -161,6 +167,10 @@ header {
     background-color: #FFF;
 }
 
+.menu{
+    margin-right: 1.5rem;
+}
+
 #check-menu{
     display: none;
 }
@@ -177,11 +187,12 @@ header {
 /*--------------CONTENT--------------*/
 .quick-information{
     display: flex;
+    margin: 5% 0 5% 0;
 }
 
 .myname{
     flex-direction: row;
-    padding: 5rem;
+    padding: 3rem;
 }
 .name{
     font-size: 3rem;
@@ -192,30 +203,38 @@ header {
 .maxim{
     text-align: center;
     margin: auto;
+    font-style: italic;
 }
 
 .some-info{
     display: flex;
 }
 
+.vietnamese-info{
+    margin: 0.5rem;
+}
+
 .info-title{
     font-weight: bold;
-    padding: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .info-detail{
-    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    padding: 0 1rem 1rem 1rem;
     text-align: justify;
 }
 
 .photo{
     height: 40rem;
+    margin-top: 10%;
 }
 
 .photo-text{
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    padding: 0.5rem;
 }
 
 .photo-slideshow{
@@ -229,6 +248,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     background: rgb(209, 150, 150);
+    margin-top: 5%;
 }
 .video-discription-left{
     width: 50%;
@@ -274,3 +294,64 @@ header {
 }
 
 /*--------------FOOTER--------------*/
+
+
+@media only screen and (max-width: 600px){
+    .some-info{
+        flex-direction: column;
+    }
+
+    .topic{
+        display: none;
+    }
+
+    .topic-start{
+        font-size: 2.5rem;
+    }
+
+    .quick-information{
+        flex-direction: column;
+    }
+
+    .photo{
+        height: 14rem;
+    }
+
+    .video-discription-left{
+        width: 100%;
+    }
+
+    .video-discription-right{
+        width: 100%;
+    }
+
+    .video-youtube-left{
+        width: 100%;
+    }
+
+    .video-youtube-right{
+        width: 100%;
+    }
+
+    .video-discription-detail{
+        display: none;
+    }
+
+    .information{
+        flex: 50%;
+    }
+
+    .contact{
+        flex: 50%;
+    }
+
+    .myname{
+        padding: 1rem;
+    }
+
+    .name{
+        font-size: 2rem;
+    }
+
+
+}
