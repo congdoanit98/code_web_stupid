@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: olive 1px solid;
+    /*border: olive 1px solid;*/
     width: 100%;
 }
 /*--------------HEADER--------------*/
@@ -125,7 +125,7 @@ header {
     text-align: left;
     font-size: 1rem;
     top: 5rem;
-    
+    transition: all .2s ease-in-out;
 }
 
 .list-topic-item{
@@ -135,6 +135,7 @@ header {
     width: 100%;
     background-color: #8A2908;
     color: #FFF;
+    transition: all .2s ease-in-out;
 }
 .list-topic-item:hover{
     display: block;
@@ -143,6 +144,7 @@ header {
     width: 100%;
     background-color: #FFF;
     color: #8A2908;
+    
 }
 
 .list-topic-item a{
@@ -186,9 +188,6 @@ header {
     font-weight: bold;
 }
 
-.career{
-    
-}
 
 .maxim{
     text-align: center;
@@ -199,5 +198,79 @@ header {
     display: flex;
 }
 
+.info-title{
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.info-detail{
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    text-align: justify;
+}
+
+.photo{
+    height: 40rem;
+}
+
+.photo-text{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.photo-slideshow{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+
+.video{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(209, 150, 150);
+}
+.video-discription-left{
+    width: 50%;
+    text-align: right;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.video-discription-right{
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    padding: 0.5rem;
+}   
+
+.video-discription-title{
+    font-weight: bold;
+}
+
+.video-youtube-left{
+    width: 50%;
+    text-align: right;
+    height: 15rem;
+    padding: 0.5rem;
+    align-items: center;
+}
+.video-youtube-right{
+    width: 50%;
+    text-align: left;
+    height: 15rem;
+    padding: 0.5rem;
+}
+.manage-video-left{
+    width: 25rem;
+    height: 100%;
+    float: right;
+    
+}
+
+.manage-video-right{
+    width: 25rem;
+    height: 100%;
+}
 
 /*--------------FOOTER--------------*/
