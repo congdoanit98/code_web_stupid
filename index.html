@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <div class="information">
+        <div class="information" id="top-page">
             <div class="topic-start"><a href="index.html">Đoàn</a></div>
             <div class="topic"><a href="#id-some-info">TỰ SỰ<i class="fas fa-chevron-down"></i></a></div>
             <div class="topic"><a href="#">NHỮNG CHUYẾN ĐI<i class="fas fa-chevron-down"></i></a></div>
@@ -129,6 +129,14 @@
         </div>
     </footer>
 
+    <div id="up-page" class="go-top-page btn-hide">
+        <div class="bottom-go-top-page">
+            <a href="#top-page">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+
 
     <script>
         function showMenu() {
@@ -173,6 +181,22 @@
             document.getElementById("photo-slideshow").src = image_path[i];
             i++;
         }
+
+        
+
+        window.onscroll = () => {
+            var y = window.scrollY;
+            btnTopPage = document.getElementById("up-page");
+            
+            if (y > 400){
+                btnTopPage.className = "go-top-page btn-show"
+            }
+            else{
+                btnTopPage.className = "go-top-page btn-hide"
+            }
+        }
+
+       
         </script>
 </body>
 </html>
