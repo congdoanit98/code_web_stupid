@@ -1,5 +1,8 @@
 var tl = gsap.timeline();
 
+tl.from(".loading-picture", {duration: 1, opacity: 0, ease: "power3"})
+tl.to(".loading-picture", {duration: 1, opacity: 0, ease: "power3"})
+
 tl.from(".myname", {duration: 1, y: 100, opacity: 0, ease: "power3"})
 tl.from(".maxim", {duration: 1, y: 100, opacity: 0, ease: "power3"},"-=0.5")
 tl.from(".vietnamese-info", {duration: 1, y: 100, opacity: 0, ease: "power3", stagger: 0.2})
@@ -12,7 +15,8 @@ const videoRight = gsap.from(".manage-video-right", {
     y: 100,
     duration: 2,
     opacity: 0,
-    ease: "power3"
+    ease: "power3",
+    stagger: 0.5
   });
 
 
@@ -33,10 +37,12 @@ ScrollTrigger.create({
 });
 
 const videoLeft = gsap.from(".manage-video-left", {
+    delay: 0.25,
     y: 100,
     duration: 2,
     opacity: 0,
-    ease: "power3"
+    ease: "power3",
+    stagger: 0.5
 });
 ScrollTrigger.create({
     trigger: ".video",

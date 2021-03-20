@@ -11,6 +11,19 @@ html {
   /* border: olive 1px solid; */
   width: 100%;
 }
+
+/*--------------LOADING--------------*/
+.loading-picture {
+  z-index: 2;
+  top: 70px;
+  display: block;
+  position: absolute;
+  height: 1080px;
+  width: 100%;
+  background-image: url(img/loading.jpg);
+  background-size: 1920px;
+}
+
 /*--------------HEADER--------------*/
 
 .fa-chevron-down {
@@ -160,6 +173,7 @@ header {
   font-size: 1rem;
   top: 5rem;
   transition: all 0.2s ease-in-out;
+  z-index: 1;
 }
 
 .list-topic-item {
@@ -330,7 +344,7 @@ header {
 }
 
 iframe {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 /*--------------FOOTER--------------*/
@@ -399,6 +413,13 @@ footer {
 /*--------------sccle--------------*/
 
 @media only screen and (max-width: 600px) {
+  .loading-picture {
+    height: 800px;
+    width: 100%;
+    background-image: url(img/loading.jpg);
+    background-size: 1500px;
+  }
+
   header {
     height: 70px;
   }
