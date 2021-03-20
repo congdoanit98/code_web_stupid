@@ -76,6 +76,7 @@ header {
   font-size: 4rem;
   width: 10rem;
   margin-left: 0.5rem;
+  font-family: "Dancing Script", cursive;
 }
 
 .information a {
@@ -282,7 +283,7 @@ header {
 .video {
   display: flex;
   flex-wrap: wrap;
-  background: rgb(209, 150, 150);
+  /* background: rgb(209, 150, 150); */
   margin-top: 5%;
 }
 .video-discription-left {
@@ -479,4 +480,16 @@ footer {
   footer {
     flex-direction: column;
   }
+}
+
+.test {
+  width: 1500px;
+  height: 1000px;
+}
+
+.test-haha {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
