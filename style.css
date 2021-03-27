@@ -405,6 +405,7 @@ p{
 .cafe:hover .overlay {
   bottom: 0;
   height: 100%;
+<<<<<<< HEAD
 }
 
 .cloths:hover .overlay{
@@ -412,6 +413,15 @@ p{
   height: 100%;
 }
 
+=======
+}
+
+.cloths:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+>>>>>>> 66e95a5b803a5c665d6c988f39805e557a1498e2
 .concept:hover .overlay{
   bottom: 0;
   height: 100%;
@@ -454,9 +464,15 @@ p{
   background-color: rgb(207, 207, 207);
   color: #458b00;
 } */
+<<<<<<< HEAD
 
 
 
+=======
+
+
+
+>>>>>>> 66e95a5b803a5c665d6c988f39805e557a1498e2
 .note{
   text-align: center;
   font-family: "Dancing Script", cursive;
