@@ -61,7 +61,7 @@ ScrollTrigger.create({
 
 const projectIntro = gsap.from(".project-intro", {
     delay: 0.25,
-    x: 200,
+    x: -200,
     duration: 2,
     opacity: 0,
     ease: "power3",
@@ -84,7 +84,7 @@ ScrollTrigger.create({
 
 const project = gsap.from(".project-item", {
     delay: 0.25,
-    y: 100,
+    y: 50,
     duration: 2,
     opacity: 0,
     ease: "power3",

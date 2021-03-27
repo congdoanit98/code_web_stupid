@@ -173,7 +173,7 @@ header {
   font-size: 1rem;
   top: 5rem;
   transition: all 0.2s ease-in-out;
-  z-index: 1;
+  z-index: 3;
 }
 
 .list-topic-item {
@@ -355,6 +355,7 @@ header {
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
   padding: 20px;
+  padding-top: 40px;
 }
 
 .project-show {
@@ -369,7 +370,6 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  background-color: black;
   color: white;
 }
 
@@ -389,6 +389,26 @@ header {
 .farm {
   background-color: #458b00;
 }
+
+.cafe:hover {
+  background-color: rgb(207, 207, 207);
+  color: #8b4513;
+}
+
+.cloths:hover {
+  background-color: rgb(207, 207, 207);
+  color: #104e8b;
+}
+
+.concept:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.farm:hover {
+  background-color: rgb(207, 207, 207);
+  color: #458b00;
+}
+
 /*--------------FOOTER--------------*/
 footer {
   display: flex;
@@ -453,6 +473,20 @@ footer {
 }
 
 /*--------------sccle--------------*/
+
+@media only screen and (max-width: 920px){
+  .topic{
+    font-size: 1rem;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+  .project-item {
+    width: 120px;
+    height: 120px;
+    font-size: 1rem;
+}
+  
 
 @media only screen and (max-width: 600px) {
   .loading-picture {
