@@ -374,10 +374,6 @@ p{
   text-align: center;
 }
 
-.cafe {
-  background-color: #8b4513;
-  position: relative;
-}
 
 .overlay {
   position: absolute;
@@ -420,6 +416,11 @@ p{
 .farm:hover .overlay{
   bottom: 0;
   height: 100%;
+}
+
+.cafe {
+  background-color: #8b4513;
+  position: relative;
 }
 
 
@@ -648,16 +649,4 @@ footer {
   footer {
     flex-direction: column;
   }
-}
-
-.test {
-  width: 1500px;
-  height: 1000px;
-}
-
-.test-haha {
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: red;
 }
